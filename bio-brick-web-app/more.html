@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> More about BioBricks </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+     <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+
+
+   <style>
+   img {
+    width: 50%; 
+    height: 50%; 
+    object-fit: contain2;
+    }
+.centered {
+  position: fixed;
+  top : 11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body {
+  font-family: Helvetica;
+  font-style: bold;
+  background: url(/Users/Sashank/Desktop/Hackathon/Microbot.png) no-repeat;
+  background-size: 100%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .font{
+  font-weight: bold;
+  color: white;
+ 	font-size :48px;
+ 	position: fixed;
+    top : 11%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+ }
+.font2{
+  font-weight: bold;
+  color: white;
+  font-size :48px;
+  position: fixed;
+    top : 20%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+ }
+ a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+ .next{
+    position: fixed;
+    top : 55%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+ }
+  .previous{
+    position: fixed;
+    top : 55%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+  }
+ .round {
+    border-radius: 75%;
+}
+   </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="home.html">Bio-CSE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li class="active"><a href="more.html">More</a></li> 
+        <li><a href="assembly.html">Assembly</a></li>
+        <li><a href="ribo.html">RiboSwitches</a></li>  
+       <li><a href="chatbot.html">BrickBot</a></li> 
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<div>
+<h1 class="animated fadeInUp font">
+  Building a tower with Lego bricks<br> </h1>
+  <h2 class="animated fadeInUp font2">
+  <button type="button" class="btn btn-success btn-md" id="myBtn" data-toggle="modal" data-target="#myModal1" data-keyboard="true">Extending Lego to building blocks of life</button>
+  <button type="button" class="btn btn-success btn-md" id="myBtn" data-toggle="modal" data-target="#myModal2" data-keyboard="true">Three levels</button>
+
+</div>
+ <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Decoding the enigma</h4>
+        </div>
+        <div class="modal-body">
+          <p>There are three levels of complexity using BioBrick parts: parts, devices and systems.</p>
+<p>
+– <b>Parts</b> are the actual building blocks that encode basic biological functions (such as encoding a certain protein, or providing a promoter to let RNA polymerase bind and initiate transcription of downstream sequences). </p>
+<p>
+– <b>Devices</b> consist of multiple parts that implement some human-defined function (such as a riboregulator producing a fluorescent protein whenever the environment contains a certain chemical).</p>
+<p>
+– <b>Systems</b> perform high-level tasks (such as oscillating between two colours at a predefined frequency).</p>
+                  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</h2>
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><B> Building the world, one bot at a time! </B></h4>
+        </div>
+        <div class="modal-body">
+        <center>
+          <img src="/Users/Sashank/Desktop/Hackathon/bot.gif">
+          </center>
+                  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<DIV>
+<a href="learn.html" class="previous round">&#8249;</a>
+<a href="assembly.html" class="next round">&#8250;</a>
+</DIV>
+
+</body>
