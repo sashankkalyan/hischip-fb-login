@@ -1,0 +1,16 @@
+This is a Hischip Intern Project.
+The files consist of login.php,index.php,myfriends.php,logout.php
+
+login.php ----
+This file checks for the necessary login authorization information and logs in through the facebook login.
+It implements facebook sdk and obtains the login url.
+
+index.php ----
+This file obtains the access token and prints the necessay user information that is name ,age,gender etc.
+It also contains the buttons for friends list ang logging out.
+
+myfriends.php ----
+This prints the friends list.
+
+logout.php ----
+This logs out of the login.
